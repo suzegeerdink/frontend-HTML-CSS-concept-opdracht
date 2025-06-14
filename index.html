@@ -6,19 +6,20 @@
     <title>Concept Assignment</title>
 </head>
 <body>
+<!-- ---------------------------------------------------- Header ------------------------------------------------------>
 <header class="header">
     <nav class="navbar">
         <ul>
-            <li><p>Case Studies</p></li>
-            <li><p>Services</p></li>
-            <li><p>Contact us</p></li>
+            <li><a href="#project-container"><p>Case Studies</p></a></li>
+            <li><a href="#outer-container-services"><p>Services</p></a></li>
+            <li><a href="#lets-work-together"><p>Contact us</p></a></li>
         </ul>
     </nav>
     <div class="title-header">
         <div class="title-header-text">
             <h1>Your website is an investment in the success of your business.</h1>
             <h2>We are here to help you succeed.</h2>
-            <button class="button-header" type="button">Let's work together</button>
+            <a href="#lets-work-together"><button class="button-header" type="button">Let's work together</button></a>
         </div>
     </div>
     <div class="icon-header">
@@ -26,6 +27,7 @@
     </div>
     <div class="driehoek"></div>
 </header>
+<!-- ------------------------------------------------ Introduction ---------------------------------------------------->
 <main>
     <section class="introduction-text-container">
         <div class="bg-text hello">hello</div>
@@ -39,8 +41,8 @@
             <p>Have a question? <a href="/">Click here</a> to contact us!</p></div>
         <div class="driehoek-2"></div>
     </section>
-
-    <section class=project-container>
+    <!-- ---------------------------------------------- Projects ------------------------------------------------------>
+    <section id=project-container>
         <div class="bg-text work">work</div>
         <article class="project">
             <div class="project-text">
@@ -85,8 +87,8 @@
         </article>
         <div class="driehoek-3"></div>
     </section>
-
-    <div class="outer-container">
+    <!-- ---------------------------------------------- Services ------------------------------------------------------>
+    <div id="outer-container-services">
         <div class="bg-text services">services</div>
         <section class="services-container">
             <article class="service">
@@ -142,15 +144,14 @@
                     brand
                     bible and ensure your messaging is focused and targeted.</p>
             </article>
-
         </section>
     </div>
-
+    <!-- ---------------------------------------------- Contact ------------------------------------------------------->
     <section class="form">
         <div class="driehoek-4"></div>
         <div class="inner-form">
             <div class="form-title">
-                <h1>Let's work together</h1>
+                <h1 id="lets-work-together">Let's work together</h1>
                 <p>Have a question? Need a quote? Let us know!</p>
             </div>
             <form class="form-text-areas-button" onsubmit="">
@@ -175,10 +176,9 @@
         </div>
     </section>
 </main>
-
+<!-- -------------------------------------------------- Footer -------------------------------------------------------->
 <footer>
     <p>Business website opdracht © NOVI Hogeschool 2022</p>
 </footer>
-
 </body>
 </html>
