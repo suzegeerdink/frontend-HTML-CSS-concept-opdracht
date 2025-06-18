@@ -458,6 +458,7 @@ a {
 
 .bar input::placeholder {
     padding-left: 10px;
+    font-family: "Roboto", sans-serif;
 }
 
 .bar input:focus {
@@ -475,11 +476,13 @@ a {
 .message-bar textarea::placeholder {
     padding-left: 10px;
     padding-top: 5px;
+    font-family: "Roboto", sans-serif;
 }
 
 .message-bar textarea:focus {
     padding-left: 10px;
     padding-top: 5px;
+    font-family: "Roboto", sans-serif;
 }
 .message-bar textarea:focus::placeholder {
     color: transparent;
