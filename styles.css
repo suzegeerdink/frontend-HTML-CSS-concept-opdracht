@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+/* CSS Reset*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+:root {
+    --color-purple: #5722CD;
+    --color-blue: #4845E4;
+    --button-background-color: #ED4385;
+    --text-color: #0C0C0C;
+    --text-color-title: white;
+    --floating-words-color: #F2F0FF;
+    --projects-background-color: #F3F6F9;
+    --service-tiles-text: #7A7A7A;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-family: "Merriweather", serif;
+    color: var(--text-color-title);
+}
+
+.title-header-text {
+    color: white;
+    text-align: center;
+}
+
+.title-header-text h2 {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.button-header, .form button {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.bg-text {
+    font-size: 30rem;
+    font-weight: 800;
+    color: var(--floating-words-color);
+    letter-spacing: 0.2rem;
+
+}
+.introduction-text-whole h1 {
+    color: var(--color-purple);
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.introduction-text-whole a {
+    color: var(--color-purple);
+    text-decoration: none;
+}
+
+.project-text h1 {
+    color: black;
+    font-size: 24px;
+}
+
+.view-projects {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-purple);
+}
+
+.services-container h1 {
+    color: var(--color-purple);
+}
+
+.service p {
+    color: var(--service-tiles-text);
+    font-weight: lighter;
+    font-size: 14px;
+}
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* ------------------------------- 3.1 Reusables ----------------------------------- */
+
+/* ------------------------------- 3.2 Other --------------------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* ------------------------------- 4.1 Header -------------------------------------- */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(90deg,rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 100%);
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.title-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 400px;
+}
+
+.title-header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 250px;
+    max-width: 700px;
+}
+
+.button-header {
+    border-radius: 50px;
+    background-color: var(--button-background-color);
+    border: 1px solid var(--button-background-color);
+    width: 250px;
+    height: 50px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    list-style: none;
+    height: 50px;
+    display: flex;
+    width: 35%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: white;
+}
+
+.navbar ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-basis: 150px;
+}
+
+.icon-header {
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.driehoek {
+    width: 0;
+    height: 0;
+    border-left: 1790px solid white;
+    border-right: 10px solid transparent;
+    border-top: 60px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 89.5%;
+}
+
+/* ------------------------------- 4.2 Introduction -------------------------------- */
+.introduction-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80vh;
+    position: relative;
+    padding: 4rem;
+}
+
+.bg-text {
+    position: absolute;
+    white-space: nowrap;
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.hello {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.introduction-text-whole {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+.introduction-text-h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    flex-basis: 200px;
+    width: 40%;
+}
+
+.driehoek-2 {
+    width: 0;
+    height: 0;
+    border-left: 1790px solid var(--projects-background-color);
+    border-right: 10px solid transparent;
+    border-top: 60px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 92%;
+}
+/* ------------------------------- 4.3 Projects ------------------------------------ */
+
+.work {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: var(--projects-background-color);
+    row-gap: 30px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    position: relative;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px;
+    width: 100%;
+    z-index: 1;
+}
+
+.project:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 300px;
+    min-height: 300px;
+    flex-shrink: 1;
+}
+
+.title-squiggle-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 70px;
+}
+
+.title-squiggle-line > img {
+    width: 20%;
+    height: 20%;
+}
+.image-wrapper img {
+    width: 100%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.view-projects {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.view-projects::after {
+    content: "";
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-purple);
+    transition: width 0.3s ease;
+    display: inline-block;
+}
+
+.view-projects:hover::after {
+    width: 50px;
+}
+
+.driehoek-3 {
+    width: 0;
+    height: 0;
+    border-left: 1790px solid white;
+    border-right: 10px solid transparent;
+    border-top: 80px solid transparent;
+    position: absolute;
+    top: 96.7%
+}
+/* ------------------------------- 4.4 Services ------------------------------------ */
+.services {
+    color: var(--floating-words-color);
+    font-size: 14rem;
+    top: 0;
+}
+
+#outer-container-services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 150px;
+    position: relative;
+}
+.services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-gap: 2rem;
+    max-width: 1200px;
+    z-index: 1;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 310px;
+    flex: 1 1 calc(33.333% - 2rem);  /* Subtract the gap */
+    max-width: calc(33.333% - 2rem); /* Prevent overflow */
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid var(--color-purple);
+    background: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.service img {
+    width: 30%;
+}
+
+/* ------------------------------- 4.5 Form ---------------------------------------- */
+.driehoek-4 {
+    width: 0;
+    height: 0;
+    border-right: 1790px solid white;
+    border-left: 10px solid transparent;
+    border-bottom: 80px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.form-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 90px;
+    color: white;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(90deg,rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 100%);
+    position: relative;
+}
+
+.inner-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 750px;
+    min-width: 800px;
+}
+.form-text-areas-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 600px;
+}
+.form textarea {
+    width: 800px;
+    height: 300px;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 50px;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+.bar input:focus {
+    outline: none;
+}
+
+.bar input::placeholder {
+    padding-left: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.bar input:focus {
+    padding-left: 10px;
+}
+
+.bar input:focus::placeholder {
+    color: transparent;
+}
+
+.message-bar textarea:focus {
+    outline: none;
+}
+
+.message-bar textarea::placeholder {
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: "Roboto", sans-serif;
+}
+
+.message-bar textarea:focus {
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: "Roboto", sans-serif;
+}
+.message-bar textarea:focus::placeholder {
+    color: transparent;
+}
+
+.message-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 315px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.form input {
+    height: 40px;
+}
+
+.form button {
+    border-radius: 50px;
+    background-color: var(--button-background-color);
+    border: 1px solid var(--button-background-color);
+    width: 180px;
+    height: 50px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form h1 {
+    font-size: 40px;
+}
+
+/* ------------------------------- 4.6 Footer ---------------------------------------- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    background-color: black;
+    color: white;
+}
+/* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar ul {
+        height: 70px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bg-text {
+        font-size: 15rem;
+        letter-spacing: -15px;
+    }
+
+    .hello {
+        top: 25%;
+    }
+
+    .introduction-text-h1 {
+        flex-basis: 250px;
+        width: 100%;
+    }
+
+    #project-container {
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+
+    .work {
+        top: 5%;
+    }
+
+    .project {
+        flex-direction: column-reverse;
+    }
+
+    .project:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    .title-squiggle-line > img {
+        width: 10%;
+        height: 10%;
+    }
+
+    .image-wrapper {
+        flex-basis: 50px;
+    }
+
+    .driehoek-3 {
+        top: 97%;
+    }
+
+    .services {
+        top: 0;
+        font-size: 10rem;
+    }
+
+    .service {
+        justify-content: space-between;
+        align-items: flex-start;
+        flex: 1;
+        flex-basis: 300px;
+        max-width: 300px;
+
+    }
+
+    .services-container {
+        flex-direction: column;
+        flex-basis: 500px;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    #outer-container-services {
+        padding: 0;
+    }
+
+    .form textarea {
+        width: 550px;
+    }
+}
